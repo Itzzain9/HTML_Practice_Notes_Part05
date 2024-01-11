@@ -1,0 +1,204 @@
+<!-- This Repo Contains Tables ,
+      Forms-checkbox-radiobox,File Select-->
+<!DOCTYPE html>
+<html lang="en">
+<head>H
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice & Notes</title>
+</head>
+<body>
+
+   <!-- Example of Tables -->
+   <table  border="2" >
+      <tr>
+          <td>Row 1,Column 1</td>
+          <td>Row 1,Column 2</td>
+      </tr>
+      <tr>
+          <td>Row 2,Column 1</td>
+          <td>Row 2,Column 2</td>
+      </tr>
+  </table>
+  <!-- Example Heading in Table -->
+  <table  border="2" cellspacing="14" cellpadding="14" >
+      <caption>Computer Language</caption>
+      <tr>
+          <th>Web Development</th>
+          <th>Software Development</th>
+      </tr>
+      <tr>
+          <td>HTML</td>
+          <td>C++</td>
+      </tr>
+      <tr>
+          <td>PHP</td>
+          <td>Fortan</td>
+      </tr>
+  </table>
+  <!-- Spanning -->
+  <!-- Example of Colspan -->
+  <table  border="2" cellspacing="4" cellpadding="10" >
+      <caption>Web Language</caption>
+          <th width="40%" align="center">Client side</th>
+          <td align="center">HTML</td>
+          <td align="center">CSS</td>
+          <td align="center">JavaScript</td>
+      </tr>
+      <tr>
+          <th align="center">Server Side</th>
+          <td align="center">ColdFusion</td>
+          <td align="center" colspan="2">PHP</td>
+      </tr>
+  </table>
+  <!-- Example of rowspan -->
+  <table  border="2" cellspacing="4" cellpadding="10" width="90%" >
+      <caption>Computer Language</caption>
+      <tr>
+          <th align="center" rowspan="2">Web language</th>
+          <td align="center">HTML</td>
+          <td align="center">CSS</td>
+      </tr>
+      <tr>
+          <td align="center">JavaScript</td>
+          <td align="center">PHP</td>
+      </tr>
+      <tr>
+          <th rowspan="2">Software langauge</th>
+          <td align="center">C</td>
+          <td align="center">C++</td>
+      </tr>
+  </table>
+  <!-- Align Table Content -->
+  <table border="2">
+      <caption> Computer Langauges</caption>
+      <tr>
+          <th align="center">Web Development</th>
+          <th align="center">Software Development</th>
+      </tr>
+      <tr>
+      <td align="center">HTML</td>
+      <td align="center">C++</td>
+      </tr>
+      <tr>
+          <td align="left">PHP</td>
+          <td align="right">Fortan</td>
+      </tr>
+  </table>
+  <!-- Example of Table Align -->
+  <table border="2" align="center"> -->
+      <caption> Computer Langauges</caption>
+      <tr>
+          <th align="center">Web Development</th>
+          <th align="center">Software Development</th>
+      </tr>
+      <tr>
+      <td align="center">HTML</td>
+      <td align="center">C++</td>
+      </tr>
+      <tr>
+          <td align="left">PHP</td>
+          <td align="right">Fortan</td>
+      </tr>
+  </table>
+  
+  <!-- Example of Forms  -->
+  <p>This is My First Form</p>
+  <form>
+      <label> First Name:</label>
+      <input type="text" placeholder="Please Enter Your Name" required ><br><br>
+      <Label>Insta Gram id</Label>
+      <input type="text" placeholder="Enter Yout id" ><br>
+      <label>Password</label>
+      <input type="password" required>
+      <input type="submit" name="submit">
+      <input type="reset" name="reset">
+  </form>
+  <form action="/cgi-bin/hello_get.cgi" method="get">
+      Login:
+      <input type="text" name="login"/>
+      <br>
+      Passwrd:
+      <input type="text" name="password"/>
+      <input type="submit" value="submit">
+  </form>
+   <!-- Example of Multiplelinee text area -->
+  <form>
+      Description:<br>
+      <textarea rows="5" cols="50" name="description">
+      Enter description here.....
+  </textarea>
+  </form>
+  <form name="myform" action="https://www.mydomain.com/myformhandler.cgi" method="post">
+      <div align="center">
+          <br><br>
+          <input type="text" size="25" value="Enter your Name here">
+          <br><input type="image" src="/f95f5676571b30e0b79d23e5d75b78d7.jpg" name="image" width="60" height="60"><br>
+      </div>
+  </form>
+
+  <!-- Example of checkbox  -->
+  <form>
+      <input type="checkbox" name="Gender" id="Male" checked>Male
+      <input type="checkbox" name="Gender" id="Female">Female
+      <input type="checkbox" name="Gender" id="Not To Say">Not To Say
+  </form>
+  <!-- Example of Radio Button -->
+  <form>
+      <input type="radio" name="Gender" id="Male" >Male
+      <input type="radio" name="Gender" id="Female">Female
+      <input type="radio" name="Gender" id="Not To Say">Not To Say
+  </form>
+
+  <!-- Example of Select Box  -->
+  <form>
+      <label>Choose the month</label>
+      <select>
+          <option></option>
+          <option>January</option>
+          <option>Febuary</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>Septmber</option>
+          <option>Octomber</option>
+          <option>November</option>
+          <option>December</option>  
+      </select>
+  </form>
+  <!-- to select multiple option -->
+  <form>
+      <label>Choose the month</label>
+      <select multiple>
+          <option>January</option>
+          <option>Febuary</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>Septmber</option>
+          <option>Octomber</option>
+          <option>November</option>
+          <option>December</option>  
+      </select>
+  </form>
+
+  <!-- Example pf file select box -->
+
+  <form>
+      <label for="file-select">Upload</label>
+      <input type="file" name="upload" id="file-selcet">
+  </form>
+
+  <form>
+      <p>This is Page 10</p>
+      <input type="hidden" name="pgaenumber" value="10"/>
+      <input type="submit" value="Next Page"/>
+  </form>
+</body>
+</html>
